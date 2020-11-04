@@ -6,20 +6,20 @@ namespace Pizza_UML_3
 {
     public abstract class MenuItem : IMenuItem
     {
-        private int _number;
+        protected int _number;
         public int Number
         {
             get { return _number; }
         }
 
-        private string _name;
+        protected string _name;
         public string Name
         {
             get { return _name; }
             set { _name = value; }
         }
 
-        private string _description;
+        protected string _description;
 
         public string Description
         {
@@ -27,28 +27,28 @@ namespace Pizza_UML_3
             set { _description = value; }
         }
 
-        private double _price;
+        protected double _price;
         public double Price
         {
             get { return _price; }
             set { _price = value; }
         }
 
-        private MenuType _menuType;
+        protected MenuType _menuType;
         public MenuType Type
         {
             get { return _menuType; }
             set { _menuType = value; }
         }
 
-        private bool _isVegan;
+        protected bool _isVegan;
         public bool IsVegan
         {
             get { return _isVegan; }
             set { _isVegan = value; }
         }
 
-        private bool _isOrganic;
+        protected bool _isOrganic;
 
         public bool IsOrganic
         {

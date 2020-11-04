@@ -18,5 +18,10 @@ namespace Pizza_UML_3
         {
             _alcohol = alcohol;
         }
+        public override string PrintInfo()
+        {   // Denne metode printer formateret ud.
+            return
+                $"Number {_number} \tName {_name} \n\tDescription {_description} Price {_price} MenuType {_menuType} IsVegan {_isVegan} IsOrganic {_isOrganic} Alcohol {_alcohol}";
+        }
     }
 }
