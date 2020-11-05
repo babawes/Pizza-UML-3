@@ -6,7 +6,8 @@ namespace Pizza_UML_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Store store = new Store();
+            store.StoreCode();
         }
     }
 }

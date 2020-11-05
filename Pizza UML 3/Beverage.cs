@@ -14,9 +14,10 @@ namespace Pizza_UML_3
             set { _alcohol = value; }
         }
 
-        public Beverage(int number, string name, string description, double price, MenuType menuType, bool isVegan, bool isOrganic, bool alcohol) : base(number, name, description, price, menuType, isVegan, isOrganic)
+        public Beverage(int number, string name, string description, double price, bool isVegan, bool isOrganic, bool alcohol) : base(number, name, description, price, isVegan, isOrganic)
         {
             _alcohol = alcohol;
+            _menuType = MenuType.Beverage;
         }
         public override string PrintInfo()
         {   // Denne metode printer formateret ud.

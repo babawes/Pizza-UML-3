@@ -10,6 +10,10 @@ namespace Pizza_UML_3
         public override int Count { get; }
         public override void Add(IMenuItem aMenuItems)
         {
+            if(_menuCatalog.ContainsKey(aMenuItems.Number))
+            {
+                throw new MenuItemNumberExistsException("Menu number already in use");
+            }
             _menuCatalog.Add(aMenuItems.Number,aMenuItems);
         }
 

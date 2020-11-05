@@ -62,13 +62,12 @@ namespace Pizza_UML_3
                 $"Number {_number} \tName {_name} \n\tDescription {_description} Price {_price} MenuType {_menuType} IsVegan {_isVegan} IsOrganic {_isOrganic}";
         }
 
-        public MenuItem(int number, string name, string description, double price, MenuType menuType, bool isVegan, bool isOrganic)
+        public MenuItem(int number, string name, string description, double price, bool isVegan, bool isOrganic)
         {
             _number = number;
             _name = name;
             _description = description;
             _price = price;
-            _menuType = menuType;
             _isVegan = isVegan;
             _isOrganic = isOrganic;
         }

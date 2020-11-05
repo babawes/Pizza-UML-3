@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pizza_UML_3
 {
-    public enum MenuType { Pizza, Pasta, Topping, SoftDrink, AlcoholicDrink }
+    public enum MenuType { Pizza, Pasta, Topping, Beverage }
     public interface IMenuItem
     {
         int Number { get; }

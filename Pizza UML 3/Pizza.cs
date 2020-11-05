@@ -14,9 +14,10 @@ namespace Pizza_UML_3
             set { _deepPan = value; }
         }
 
-        public Pizza(int number, string name, string description, double price, MenuType type, bool isVegan, bool isOrganic, bool deepPan) : base(number, name, description, price, type, isVegan, isOrganic)
+        public Pizza(int number, string name, string description, double price, bool isVegan, bool isOrganic, bool deepPan) : base(number, name, description, price, isVegan, isOrganic)
         {
             _deepPan = deepPan;
+            _menuType = MenuType.Pizza;
 
         }
         public override string PrintInfo()
